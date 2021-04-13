@@ -33,6 +33,13 @@
 
                     for (let i = 0; i < eminemJson.length; i++) {
                         const eminem = eminemJson[i]
+                        const eminemDiv = document.createElement("div")
+                        eminemDiv.classList.add("col-12")
+                        const image = document.createElement("img")
+                        image.src = eminem.image
+                        image.classList.add("img-fluid")
+                        eminemDiv.appendChild(image)
+                        row.appendChild(eminemDiv)
 
                     }
                 })
