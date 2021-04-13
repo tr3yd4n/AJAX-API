@@ -1,0 +1,237 @@
+#home-body{
+    background-color: black; /*For browsers that do not support gradients*/
+    background-image: linear-gradient(to bottom right, rgb(44, 77, 121), rgb(0, 0, 0));
+    background-repeat: none;
+    margin: 0;
+    padding: 0;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    color: rgb(240, 240, 240);
+    opacity: 0.9;
+    background-size: 100vh;
+    background-size: 100vw;
+}
+#home-nav{
+    padding-top: 10px;
+    text-align: center;
+    opacity: 0.9;   
+}
+.nav-item{
+    padding-left:14px;
+    padding-right:14px;
+    letter-spacing: 1px;
+    font-size: xx-small;
+    font-weight: bolder;
+    opacity: 1;
+    position: relative;
+}
+.nav-link::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(36, 160, 67);
+    width: 0%;
+    height: 2px;
+    bottom: 0px;
+    left: 50%;
+    opacity: 1;
+    transition: all 0.7s ease;
+}
+.nav-link:hover::after,
+.nav-link:focus::after
+ {
+    width: 40%;
+    left: 30%;
+}
+#home-main-container-trending-one{
+    padding: 10px;
+    margin: 0px;
+    margin-top: 15px;    
+}
+#home-main-container-trending-two{
+    padding: 10px;
+    margin: 0px;
+    margin-top: 10px;
+}
+#home-title-one{
+    padding-bottom: 10px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+#home-title-two{
+    padding-bottom: 10px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+.album-container{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 0;
+    font-size: x-small;
+    font-weight: bolder;
+    position: relative;
+    text-align: left;   
+}
+#logo{
+    position: absolute;
+    height: 20px;
+    width: 22px;
+    padding-top: 2px;
+    opacity: 0.9;
+}
+.album-container:hover{
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.album-artist{
+    align-items: center;
+}
+.img-fluid{
+    margin-bottom: 8px; 
+}
+#bieber-banner{
+    object-fit: contain;
+}
+.jumbotron{
+    background-image: url("Justin-Bieber.webp");
+    background: contain;
+    background-repeat: no-repeat;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    color: rgb(240, 240, 240);
+    box-shadow: 0px 0px 20px 8px rgb(44, 77, 121);
+    opacity: 0.9;
+}
+#bieb-button {
+    background-color: #4CAF50; /* Green */
+    border: 2px;
+    border-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    color: rgb(240, 240, 240);
+    opacity: 0.9;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+}
+#bieb-button:hover{
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#podcast-image:hover{
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#podcast-image{ 
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+#podcast-card{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 0;
+    font-size: x-small;
+    font-weight: bolder;
+    position: relative; 
+}
+.background-image{
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100%;
+}
+.album-container img {
+    width: 25vmin;
+    height: 25vmin;
+    object-fit: cover;
+}
+@media (min-width: 500px) {   
+    .row.no-gutters .col-6 {
+        min-width: 25vmin;
+    }
+}
+#discover-title-one{
+    position: absolute;
+    top: 55%;
+    left: 55%;
+}
+#discover-title-one > a{
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    color: rgb(240, 240, 240);
+    opacity: 0.9;
+}
+@media (max-width: 500px){
+    #discover-title-one{
+        position: absolute;
+    top: 55%;
+    left: 5%;
+    }
+}
+.album-container > p > {
+    text-align: left;
+    
+}
+#bieb-logo{
+    position: absolute;
+    height: 44px;
+    width: 50px;
+    padding-top: 2px;
+    top: 80%;
+    left: 95%;
+    filter: brightness(1.75);
+}
+#bieb-logo:hover{
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#disc-logo{
+    position: absolute;
+    height: 34px;
+    width: 40px;
+    padding-top: 2px;
+    opacity: 0.9;
+    bottom: 5vw;
+    right: 5vw;
+    filter: brightness(1.1);
+}
+#disc-logo:hover{
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+/* 
+#overall-container{
+    display: flex;
+    min-height: 100vh;
+}
+
+#wrapper{
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#music-player{
+    position: fixed;
+    bottom: 0;
+} */

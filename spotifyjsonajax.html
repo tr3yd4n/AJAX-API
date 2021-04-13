@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="homestyles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kqk7nwe.css%22%3E">
+
+</head>
+
+<body id="home-body">
+
+    <nav class="navbar navbar-dark navbar-expand-sm d-flex justify-content-center" id="home-nav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="switchContent('TRENDING')">TRENDING</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="switchContent('PODCASTS')">PODCASTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="switchContent('GENRES')">MOODS AND GENRES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="switchContent('NEW')">NEW RELEASES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="switchContent('DISCOVER')">DISCOVER</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <section id="wrapper" class="container-fluid">
+        <!-- empty section to inject each nav selection -->
+
+        <section id="home-trending-content">
+            <section id="home-main-container-trending-one">
+                <div class="container">
+                    <h4 id="home-title-one">#THROWBACKTHURSDAY</h4>
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="spice.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist card-text">The Spice Girls</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="nel.jpeg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Nelly</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <a href="album.html"><img src="queen.jpg" class="img-fluid" href=""></a>
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Queen</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="mariah.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Mariah Carey</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="wu.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">WU-TANG Clan</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="WillSmithMenInBlackCDSingleCover.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Will Smith</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="home-main-container-trending-two">
+                <div class="container">
+                    <h4 id="home-title-two">The Charts</h4>
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="region_global_default.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Top 50 - Global</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="region_it_large.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Top 50 - UK</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="viral.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Viral 50 - Global</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="ab67706c0000bebb90eea0cbfd0a16dd9327116c.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Viral 50 - UK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="home-podcast-content" class="d-none">
+            <section id="home-main-container-trending-one">
+                <div class="container">
+                    <h4 id="home-title-one">LATEST PODCASTS</h4>
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-4">
+                            <div id="podcast-card" class="card">
+                                <img id="podcast-image" src="jre.jpg" class="card-img-top" alt="joe-rogan">
+                                <img id="logo" src="spotifylogo.png" width="20" height="20" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Joe Rogan</h5>
+                                    <p class="card-text">The powerful JRE (Joe Rogan Experience) is a discussion based
+                                        podcast, covering a wide range of topics, including wonderful guests!
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li id="podcast-card" class="list-group-item">Episode 131 - Elon Musk</li>
+                                    <li id="podcast-card" class="list-group-item">Length: 3 hours 34 mins</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Download</a>
+                                    <a href="#" class="card-link">More...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div id="podcast-card" class="card">
+                                <img id="podcast-image" src="ted.jpg" class="card-img-top" alt="TED-talks">
+                                <img id="logo" src="spotifylogo.png" width="20" height="20" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">TED Talks</h5>
+                                    <p class="card-text">TED Talks are influential videos from
+                                        expert speakers in education, business, science, tech and many more, with
+                                        subtitles in 100+ languages. Ideas worth spreading!
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li id="podcast-card" class="list-group-item">Episode 56 - How Hydrogen affects YOU!
+                                    </li>
+                                    <li id="podcast-card" class="list-group-item">Length: 2 hours 18 mins</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Download</a>
+                                    <a href="#" class="card-link">More...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <div id="podcast-card" class="card">
+                                <img id="podcast-image" src="daily.jpg" class="card-img-top" alt="Daily">
+                                <img id="logo" src="spotifylogo.png" width="20" height="20" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Daily</h5>
+                                    <p class="card-text">The Daily is a daily news podcast and radio show by the
+                                        American newspaper The New York Times. Hosted by Times political journalist
+                                        Michael Barbaro...</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li id="podcast-card" class="list-group-item">Episode 429 - 07/Feb/2021</li>
+                                    <li id="podcast-card" class="list-group-item">1 hour 47 mins</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Download</a>
+                                    <a href="#" class="card-link">More...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="home-genres-content" class="d-none">
+            <section id="home-main-container-trending-two">
+                <div class="container">
+                    <h4 id="home-title-two">#MOODS</h4>
+                    <div class="row no-gutters">
+                        <div id="" class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img id="mood-card" src="sleepy.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Sleepy</p>
+                            </div>
+                        </div>
+                        <div id="" class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img id="mood-card" src="excited.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Excited!</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="cosy.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Cosy</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="happy.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Happy</p>
+                            </div>
+                        </div>
+                        <div id="" class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img id="mood-card" src="rain.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Sad</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="chill.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Relaxed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="home-main-container-trending-one">
+                <div class="container">
+                    <h4 id="home-title-one">Genres</h4>
+                    <div class="row no-gutters">
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="ck.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Jazz</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="ray.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Swing</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="bytheway.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Rock</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="dp.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Dance</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="Got-To-Be-Real-by-Cheryl-Lynn-Columbia-1978.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Soul</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="album-container card">
+                                <img src="Linkin_Park_Hybrid_Theory_Album_Cover.jpg" class="img-fluid">
+                                <img id="logo" src="spotifylogo.png" width="30" height="30" alt="">
+                                <p class="album-artist">Metal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="home-new-content" class="d-none">
+            <section id="home-main-container-trending-one">
+                <div class="container">
+                    <h4 id="home-title-one">#NEW</h4>
+                </div>
+                <section id="home-main-container-trending-two">
+                    <div class="container">
+                        <div class="row no-gutters">
+                            <div class="col-12">
+                                <div class="jumbotron">
+                                    <h1 class="display-4">JUSTICE</h1>
+                                    <p class="lead">Justice is the sixth studio album by Canadian singer-songwriter and
+                                        multi-instrumentalist Justin Bieber.</p>
+                                    <hr class="my-4">
+                                    <p>Including singles "Holy", "Lonely", "Anyone", and "Hold On", all of which reached
+                                        top 20 in
+                                        the United States, at numbers three, twelve, six, and twenty, respectively. The
+                                        album's fifth single "Peaches", featuring Daniel Caesar and Giveon, debuted atop
+                                        the Billboard Hot 100 chart, becoming Bieber's seventh number-one single in the
+                                        US</p><br><img id="bieb-logo" src="spotifylogo.png" width="300" height="300"
+                                        alt="">
+                                    <a id="bieb-button" class="btn btn-success btn-lg" href="#"
+                                        role="button">More...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <section id="home-discover-content" class="d-none">
+            <section id="home-main-container-trending-one">
+                <img src="discover1.jpg" class="background-image">
+                <div id="discover-container" class="container">
+                    <h4 id="discover-title-one"><a href="#">The journey of a thousand miles,<br>starts with the first
+                            step...</a>
+                    </h4><a href="#">
+                        <img id="disc-logo" src="spotifylogo.png" width="30" height="30" alt=""></a>
+                </div>
+            </section>
+        </section>
+
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="home.js"></script>
+    <script src="spotifyjsonajax.js"></script>
+
+</body>
+
+</html>
