@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+    <button onclick="loadAPI()">Click me</button>
+    <script>
+        loadAPI = function () {
+            console.log("Hello") //check its working
+            fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem", { //retrieve info from api
+                "method": "GET",
+                "headers": {
+                    "x-rapidapi-key": "0c01d72f5emshe63645a47dfbd72p1da325jsn45dfd936d1e2",
+                    "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com"
+                }
+            })
+                .then(eminemResponse => eminemResponse.json())
+                .then(eminemJson => {
+                    console.log(eminemJson)
+                    const row = document.querySelector(".row")
+                    row.innerText = ""
+
+                    for (let i = 0; i < eminemJson.length; i++) {
+                        const eminem = eminemJson[i]
+
+                    }
+                })
+
+        }
+
+
+    </script>
+</body>
+
+</html>
