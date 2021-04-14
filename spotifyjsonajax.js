@@ -2,7 +2,7 @@ let albums = []
 let error = false
 
 function searchDeezer(query) {
-    fetch("https://deezerdevs-deezer.p.rapidapi.com/search?" + query, {
+    fetch("https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem" + query, {
         "method": "GET",
         "headers": {
             "x-rapidapi-key": "0c01d72f5emshe63645a47dfbd72p1da325jsn45dfd936d1e2",
@@ -11,9 +11,8 @@ function searchDeezer(query) {
     })
         .then((response) => response.json())
         .then((data) => {
+            console.log(data)
             console.log("resolved")
-
-
             if (data.data) {
                 const object = { title: query, albums: data.data }
                 albums.push(object)
